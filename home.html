@@ -73,16 +73,16 @@
              <div class="md:flex gap-7 ">
                  <img class="" src="/assets/feni.png" alt="">
                  <div class="mt-3 md:mt-0">
-                     <button class="flex bg-[#D2D2D2] py-3 px-4 rounded-xl mb-3 ">
+                     <button  class="flex bg-[#D2D2D2] py-3 px-4 rounded-xl mb-3 ">
                          <div class="mr-3"><i class="fa-solid fa-dollar-sign  bg-orange-500 p-1 text-white rounded-full"></i></div>
-                         <span class="text-xl font-bold">000</span>
+                         <span id="flood-add-blance" class="text-xl font-bold">000</span>
                          <h3 class="ml-3 text-xl font-bold">BDT</h3>
                      </button>
  
                      <h2 class="py-4 text-[#111111] font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h2>
                      <p class="pb-3 text-[#777777]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                     <input class="w-full border-2 py-3 px-2 rounded-lg my-4" type="text" placeholder="Write Donation Amount">
-                     <button class="w-full bg-[#B4F461] py-4 my-4 rounded-xl text-[#111111] font-bold text-2xl">Donate Now</button>
+                     <input id="flood-input-blance" class="w-full border-2 py-3 px-2 rounded-lg my-4" type="text" placeholder="Write Donation Amount">
+                     <button id="flood-donate" class="w-full bg-[#B4F461] py-4 my-4 rounded-xl text-[#111111] font-bold text-2xl">Donate Now</button>
                  </div>
              </div>
      
@@ -101,14 +101,14 @@
                  <div class="mt-3 md:mt-0">
                      <button class="flex bg-[#D2D2D2] py-3 px-4 rounded-xl mb-3 ">
                          <div class="mr-3"><i class="fa-solid fa-dollar-sign  bg-orange-500 p-1 text-white rounded-full"></i></div>
-                         <span class="text-xl font-bold">000</span>
+                         <span id="quata-blance" class="text-xl font-bold">000</span>
                          <h3 class="ml-3 text-xl font-bold">BDT</h3>
                      </button>
  
                      <h2 class="py-4 text-[#111111] font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h2>
                      <p class="pb-3 text-[#777777]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                     <input class="w-full border-2 py-3 px-2 rounded-lg my-4" type="text" placeholder="Write Donation Amount">
-                     <button class="w-full bg-[#B4F461] py-4 my-4 rounded-xl text-[#111111] font-bold text-2xl">Donate Now</button>
+                     <input id="quata-input" class="w-full border-2 py-3 px-2 rounded-lg my-4" type="text" placeholder="Write Donation Amount">
+                     <button id="quata-donate" class="w-full bg-[#B4F461] py-4 my-4 rounded-xl text-[#111111] font-bold text-2xl">Donate Now</button>
                  </div>
              </div>
      
@@ -117,6 +117,25 @@
          </section>
 
       <!-- donate-third-section-end -->
+
+      <!-- modal-start-now -->
+       <section id="modal" class=" hidden md:w-10/12 lg:w-9/12 w-11/12  mx-auto">
+        <div id="pupup" class="flex justify-center items-center ">
+            <div class="text-center my-5 shadow shadow-blue-500/40 py-4 px-6 w-1/2">
+                <h1 class="text-6xl font-bold text-black ">Congrates!</h1>
+                <i class="fa-solid fa-dollar-sign bg-orange-500 p-1 text-white rounded-full text-5xl my-6"></i>
+                <p class="text-slate-400 text-lg my-5">You have donated for Humankind</p>
+                <h2 class="text-5xl font-bold text-black ">Successfully</h2>
+
+                <button class="bg-slate-300 text-black text-xl font-bold py-4 px-6 rounded-2xl my-8">Close Confirmation</button>
+                
+
+            </div>
+
+        </div>
+
+       </section>
+      <!-- modal-end-now -->
         
     </main>
     <footer class="md:w-10/12 lg:w-9/12 w-11/12  mx-auto">
