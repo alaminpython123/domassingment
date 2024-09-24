@@ -29,9 +29,13 @@ document.getElementById('donate-now').addEventListener('click',function(){
     document.getElementById('main-blace').innerText = upadateBlance;
 
     const div = document.createElement('div');
-    div.innerHTML = `<p class="text-2xl font-bold text-black border-2 px-4 py-3 rounded-2xl mb-6"> ${inputValue} Taka is Donated for famine-2024 at Feni, Bangladesh </p>`
- 
+    div.innerHTML = `<p class="text-2xl font-bold text-black border-2 px-4 py-3 rounded-2xl mb-6"> ${inputValue} Taka is Donated for famine-2024 at Feni, Bangladesh </p> <p> ${new Date()}
+    </p>`
+
+    
     document.getElementById('transaction-container').appendChild(div);
+
+    document.getElementById('my_modal_1').showModal()
 
 
 })
@@ -43,7 +47,7 @@ document.getElementById('flood-donate').addEventListener('click', function(){
     const floodInputValue = getElementByInputValue('flood-input-blance');
     if(isNaN (floodInputValue)){
         alert('Its not a number please type number  ');
-        return
+        return;
     }
     const mainBlance = getElementByIdTextValue('main-blace');
     if(floodInputValue > mainBlance){
@@ -64,10 +68,12 @@ document.getElementById('flood-donate').addEventListener('click', function(){
     document.getElementById('main-blace').innerText = floodUpdateBlance;
 
     const div = document.createElement('div');
-    div.innerHTML = `<p class="text-2xl font-bold text-black border-2 px-4 py-3 rounded-2xl mb-6"> ${floodInputValue} Taka is Donated for Flood Relief in Feni, Bangladesh </p>`
+    div.innerHTML = `<p class="text-2xl font-bold text-black border-2 px-4 py-3 rounded-2xl mb-6"> ${floodInputValue} Taka is Donated for Flood Relief in Feni, Bangladesh </p> <p> ${new Date()}
+    </p>`
  
     document.getElementById('transaction-container').appendChild(div);
 
+    document.getElementById('my_modal_1').showModal()
 
 })
 
@@ -89,13 +95,21 @@ document.getElementById('quata-donate').addEventListener('click', function(){
     const mainBlance = getElementByIdTextValue('main-blace');
     if(quataInputValue > mainBlance){
         alert('You do not have enough money ')
+        return;
     }
     const updateQuataBlance = mainBlance - quataInputValue;
     document.getElementById('main-blace').innerText = updateQuataBlance;
 
     const div = document.createElement('div');
-    div.innerHTML = `<p class="text-2xl font-bold text-black border-2 px-4 py-3 rounded-2xl mb-6"> ${quataInputValue} Taka is Donated for Flood Relief in Quata, Bangladesh </p>`
+    div.innerHTML = `<p class="text-2xl font-bold text-black border-2 px-4 py-3 rounded-2xl mb-6"> ${quataInputValue} Taka is Donated for Flood Relief in Quata, Bangladesh </p> <p> ${new Date()}
+    </p>`
+    
  
     document.getElementById('transaction-container').appendChild(div);
+    document.getElementById('my_modal_1').showModal()
 
 })
+
+
+
+
